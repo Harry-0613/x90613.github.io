@@ -9,7 +9,7 @@ export default function AboutMe() {
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <div className="flex flex-col items-center justify-center text-white">
-        <div className=" text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black">
+        <div className="leading-loose text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black">
           Hi, I&apos;m Harry
         </div>
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black animate-wiggle">

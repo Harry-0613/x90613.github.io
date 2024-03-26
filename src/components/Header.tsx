@@ -20,7 +20,7 @@ export default function SectionHeader() {
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
   return (
     <section className="w-full h-20 z-0  bg-gradient-to-r  from-[#1e1e1e] to-[#3c3c3c] flex justify-between">
-      <div className="text-white font-bold ml-3 mt-2 mr-3 text-center">
+      <div className="text-white font-bold ml-3 mt-2 mr-3 text-center leading-loose">
         <div className="text-xl">Harry</div>
         <div>Computer Science</div>
       </div>
