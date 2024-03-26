@@ -33,13 +33,13 @@ export default function SectionHeader() {
             </Button>
           </Link>
         {/* 大螢幕顯示的按鈕 */}
-        <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none" aria-controls={open ? 'basic-menu' : undefined}
+        <div className="right-buttons">
+          <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none" aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
             onClick={handleClick}>
             Projects
           </Button>
-        <div className="right-buttons">
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}
