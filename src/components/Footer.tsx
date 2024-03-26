@@ -1,3 +1,5 @@
+"use client";
+
 export default function SectionFooter() {
   return (
     <main className="flex  justify-between w-full bg-gradient-to-r  from-[#1e1e1e] to-[#3c3c3c] ">

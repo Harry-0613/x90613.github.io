@@ -1,3 +1,4 @@
+"use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import * as React from 'react';
@@ -45,7 +46,9 @@ export default function SectionHeader() {
               'aria-labelledby': 'basic-button',
             }}
           >
-            <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
+            <Link href={`${BASE_URL}/project-Traveler`}>
+              <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
+            </Link>
             <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
             <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
             <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>

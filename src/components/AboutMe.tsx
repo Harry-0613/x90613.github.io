@@ -8,16 +8,13 @@ export default function AboutMe() {
         <AvatarImage src="./avator.jpg" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
-      <div className="text-white">
+      <div className="flex flex-col items-center justify-center text-white">
         <div className=" text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black">
           Hi, I&apos;m Harry
         </div>
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black animate-wiggle">
           I&apos;m a software engineer
         </div>
-        {/* <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black animate-wiggle ">
-          Study at NTU
-        </div> */}
         <div className=" text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-800 to-black animate-wiggle ">
           CSIE @ National Taiwan University
         </div>
@@ -48,7 +45,7 @@ export default function AboutMe() {
         </section>
         <section className="mb-3">
           <h1 className=" text-xl font-extrabold">
-          Beauty321.com - Data Engineering Intern (Jul 2023 - Oct 2023)
+          Beauty321 - Data Engineering Intern (Jul 2023 - Oct 2023)
           </h1>
           <ul className="list-disc ml-4">
             <li>Established ETL (Extract, Transform, Load) processes to convert user web browsing data into structured data for analysis.</li>
