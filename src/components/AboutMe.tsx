@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
 
 export default function AboutMe() {
   return (
-    <div className=" justify-evenly h-screen  md:flex ">
+    <div className=" justify-evenly h-screen md:flex ">
       <div className="flex flex-col justify-center items-center ml-10">
       <Avatar className="ml-3 mt-2 overflow-hidden rounded-full border-2 border-gray-200" style={{ width: '150px', height: '150px' }}>
         <AvatarImage src="./avator.jpg" />

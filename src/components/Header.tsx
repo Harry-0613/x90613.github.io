@@ -19,8 +19,8 @@ export default function SectionHeader() {
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
   return (
-    <section className="w-full h-20 z-0 bg-gradient-to-r from-[#1e1e1e] to-[#3c3c3c] flex justify-between">
-      <div className="text-white font-bold ml-3 mt-2 mr-3 mb-2 text-center leading-loose">
+    <section className="w-full h-20 z-0 bg-gradient-to-r from-[#1e1e1e] to-[#3c3c3c] flex justify-between justidy-center">
+      <div className="text-white font-bold ml-3 mt-2 mr-3 text-center leading-loose">
         <div className="text-xl">Harry</div>
         <div>Computer Science</div>
       </div>
@@ -49,12 +49,18 @@ export default function SectionHeader() {
               'aria-labelledby': 'basic-button',
             }}
           >
-            <Link href={`${BASE_URL}/project-Traveler`}>
+            <Link href="https://github.com/x90613/TravelerWeb">
               <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
             </Link>
-            <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
-            <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
-            <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>
+            <Link href={`${BASE_URL}/project-Traveler`}>
+              <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
+            </Link>
+            <Link href={`${BASE_URL}/project-Traveler`}>
+              <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
+            </Link>
+            <Link href="https://github.com/x90613/x90613.github.io">
+              <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>
+            </Link>
           </Menu>
           <Link href="https://www.linkedin.com/in/harry-hsu-9b6b6a252">
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
