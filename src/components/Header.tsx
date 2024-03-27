@@ -26,7 +26,7 @@ export default function SectionHeader() {
       </div>
 
       {/* 按鈕部分 */}
-      <div className="flex gap-2 mt-[10px] mr-3">
+      <div className="flex gap-2 mt-[10px] mt-5 mr-3">
           <Link href={`${BASE_URL}`}>
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
               About me
@@ -49,25 +49,25 @@ export default function SectionHeader() {
               'aria-labelledby': 'basic-button',
             }}
           >
-            <Link href="https://github.com/x90613/TravelerWeb">
+            <Link href="https://github.com/x90613/TravelerWeb" target="_blank">
               <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project-Traveler`}>
+            <Link href={`${BASE_URL}/project-Traveler`} target="_blank">
               <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project-Traveler`}>
+            <Link href={`${BASE_URL}/project-Traveler`} target="_blank">
               <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
             </Link>
-            <Link href="https://github.com/x90613/x90613.github.io">
+            <Link href="https://github.com/x90613/x90613.github.io" target="_blank">
               <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>
             </Link>
           </Menu>
-          <Link href="https://www.linkedin.com/in/harry-hsu-9b6b6a252">
+          <Link href="https://www.linkedin.com/in/harry-hsu-9b6b6a252" target="_blank">
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
               Linkedin
             </Button>
           </Link>
-          <Link href="https://github.com/x90613">
+          <Link href="https://github.com/x90613" target="_blank">
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
               Github
             </Button>
