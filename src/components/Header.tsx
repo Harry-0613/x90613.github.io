@@ -52,10 +52,10 @@ export default function SectionHeader() {
             <Link href="https://github.com/x90613/TravelerWeb" target="_blank">
               <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project-Traveler`} target="_blank">
+            <Link href="https://github.com/x90613/Algorithmic-Trading-Optimization-Technique" target="_blank">
               <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project-Traveler`} target="_blank">
+            <Link href={`${BASE_URL}/project`} target="_blank">
               <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
             </Link>
             <Link href="https://github.com/x90613/x90613.github.io" target="_blank">
