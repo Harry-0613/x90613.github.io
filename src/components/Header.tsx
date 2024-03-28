@@ -3,6 +3,7 @@ import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Link from "next/link";
+import "./Header-style.css";
 
 export default function SectionHeader() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -16,24 +17,29 @@ export default function SectionHeader() {
     setAnchorEl(null);
   };
 
+  const style = {    
+    fontFamily: 'Rubik Scribble, system-ui',
+    fontWeight: 400,
+    fontStyle: "normal",
+  };
+
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
   return (
     <section className="w-full h-20 z-0 bg-gradient-to-r from-[#1e1e1e] to-[#3c3c3c] flex justify-between justidy-center">
-      <div className="text-white font-bold ml-3 mt-2 mr-3 text-center leading-loose">
+      <div className="text-white font-bold ml-3 mt-2 mr-3 text-center leading-loose black-ops">
         <div className="text-xl">Harry</div>
-        <div>Computer Science</div>
+        <div className="text-xl">Computer Science</div>
       </div>
-
       {/* 按鈕部分 */}
-      <div className="flex gap-2 mt-[10px] mt-5 mr-3">
-          <Link href={`${BASE_URL}`}>
-            <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
-              About me
-            </Button>
-          </Link>
+      <div className="flex gap-2 mr-3 items-center">
         {/* 大螢幕顯示的按鈕 */}
-        <div className="right-buttons">
+        <div className="right-buttons flex">
+          <Link href={`${BASE_URL}`}>
+              <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
+                About me
+              </Button>
+          </Link>
           <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none" aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
@@ -49,17 +55,21 @@ export default function SectionHeader() {
               'aria-labelledby': 'basic-button',
             }}
           >
+            
             <Link href="https://github.com/x90613/TravelerWeb" target="_blank">
               <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
             </Link>
             <Link href="https://github.com/x90613/Algorithmic-Trading-Optimization-Technique" target="_blank">
               <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project`} target="_blank">
+            <Link href="https://github.com/x90613/Rootkit-LKM" target="_blank">
               <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
             </Link>
             <Link href="https://github.com/x90613/x90613.github.io" target="_blank">
               <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>
+            </Link>
+            <Link href={`${BASE_URL}/project`}>
+              <MenuItem onClick={handleClose}>Simple Shell</MenuItem>
             </Link>
           </Menu>
           <Link href="https://www.linkedin.com/in/harry-hsu-9b6b6a252" target="_blank">

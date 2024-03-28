@@ -1,12 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Yarndings+12+Charted&display=swap');
 
-.content-text-header{
+/* .content-text-header{
   color: #262626;
   font-size: 36px ;
+} */
+
+
+:deep(.dick) {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
-
-
-
+  
