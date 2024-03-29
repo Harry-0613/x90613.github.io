@@ -2,8 +2,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
 
 export default function AboutMe() {
   return (
-    <div className=" justify-evenly h-screen md:flex ">
-      <div className="flex flex-col justify-center items-center ml-10">
+    <div className=" justify-evenly h-screen items-center md:flex">
+      <div className="flex flex-col justify-center items-center ml-auto mr-aut">
       <Avatar className="ml-3 mt-2 overflow-hidden rounded-full border-2 border-gray-200" style={{ width: '150px', height: '150px' }}>
         <AvatarImage src="./avator.jpg" />
         <AvatarFallback>CN</AvatarFallback>
@@ -24,7 +24,7 @@ export default function AboutMe() {
         </div>
       </div>
       </div>
-      <div className="md:w-1/2 w-3/4 mt-5 ml-5 flex flex-col justify-center  items-start ">
+      <div className="md:w-1/2 w-3/4 ml-auto mr-auto flex flex-col justify-center items-center">
         <div className="p-10 border border-white rounded-xl bg-gray-800 text-white">
         {" "}
         <section>
