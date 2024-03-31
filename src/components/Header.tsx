@@ -57,7 +57,7 @@ export default function SectionHeader() {
           >
             
             <Link href="https://github.com/x90613/TravelerWeb" target="_blank">
-              <MenuItem onClick={handleClose}>Traveler - FullStack website</MenuItem>
+              <MenuItem onClick={handleClose}>Traveler - A full-stack application</MenuItem>
             </Link>
             <Link href="https://github.com/x90613/Algorithmic-Trading-Optimization-Technique" target="_blank">
               <MenuItem onClick={handleClose}>Algorithmic Trading Optimization Technique</MenuItem>
