@@ -35,11 +35,11 @@ export default function SectionHeader() {
       <div className="flex gap-2 mr-3 items-center">
         {/* 大螢幕顯示的按鈕 */}
         <div className="right-buttons flex">
-          <Link href={`${BASE_URL}`}>
+          {/* <Link href={`${BASE_URL}`}>
               <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
                 About me
               </Button>
-          </Link>
+          </Link> */}
           <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none" aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
@@ -66,9 +66,9 @@ export default function SectionHeader() {
               <MenuItem onClick={handleClose}>Rootkit - Loadable Kernel Module</MenuItem>
             </Link>
             <Link href="https://github.com/x90613/x90613.github.io" target="_blank">
-              <MenuItem onClick={handleClose}>Website - My Personal Website</MenuItem>
+              <MenuItem onClick={handleClose}>My Personal Website</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/project`}>
+            <Link href={`${BASE_URL}/coming-soon`}>
               <MenuItem onClick={handleClose}>Simple Shell</MenuItem>
             </Link>
           </Menu>
