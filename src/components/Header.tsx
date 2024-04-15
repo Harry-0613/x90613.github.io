@@ -68,9 +68,9 @@ export default function SectionHeader() {
             <Link href="https://github.com/x90613/x90613.github.io" target="_blank">
               <MenuItem onClick={handleClose}>My Personal Website</MenuItem>
             </Link>
-            <Link href={`${BASE_URL}/coming-soon`}>
+            {/* <Link href={`${BASE_URL}/coming-soon`}>
               <MenuItem onClick={handleClose}>Simple Shell</MenuItem>
-            </Link>
+            </Link> */}
           </Menu>
           <Link href="https://www.linkedin.com/in/harry-hsu-9b6b6a252" target="_blank">
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
