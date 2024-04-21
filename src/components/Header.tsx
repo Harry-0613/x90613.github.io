@@ -55,7 +55,9 @@ export default function SectionHeader() {
               'aria-labelledby': 'basic-button',
             }}
           >
-            
+            <Link href="https://github.com/Harry-0613/Web-Development" target="_blank">
+              <MenuItem onClick={handleClose}>Web Development</MenuItem>
+            </Link>
             <Link href="https://github.com/x90613/TravelerWeb" target="_blank">
               <MenuItem onClick={handleClose}>Traveler - A full-stack application</MenuItem>
             </Link>
