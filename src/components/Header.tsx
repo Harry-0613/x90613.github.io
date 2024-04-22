@@ -79,7 +79,7 @@ export default function SectionHeader() {
               Linkedin
             </Button>
           </Link>
-          <Link href="https://github.com/Harry-0613" target="_blank">
+          <Link href="https://github.com/x90613" target="_blank">
             <Button className="w-22 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded border-none">
               Github
             </Button>
